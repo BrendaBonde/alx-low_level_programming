@@ -10,4 +10,3 @@ int main(void)
 	write(2, ch, sizeof(ch));
 	return (1);
 }
-
