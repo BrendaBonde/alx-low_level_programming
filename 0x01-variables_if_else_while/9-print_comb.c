@@ -1,23 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Return: 0
+ * main - prints numbers
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	int c = 0;
+	int i;
 
-	while (c < 10)
+	fot (i = 48; i < 58; i++)
 	{
-		putchar(48 + c);
-		if (c !+ 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		c++;
+		putchar(i);
+		if (i != 57)
 	}
+	putchar(',');
+	putchar(' ');
+}
+{
 	putchar('\n');
 	return (0);
 }
