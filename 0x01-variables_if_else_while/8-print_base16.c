@@ -1,27 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Return: 0
+ * main - prints base16 numbers
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	char d = '0';
+	int i;
 
-	while (d <= '9')
+	for (i = 48; i < 58; i++)
 	{
-		putchar(d);
-		d++;
+		putchar(i);
 	}
-
-	char c = 'a';
-
-	while (c <= 'f')
+	for (i = 97; i < 103; i++)
 	{
-		putchar(c);
-		c++;
+		putchar(i);
 	}
-
-	putchar('\n');
+	putchar('n\n');
 	return (0);
 }
