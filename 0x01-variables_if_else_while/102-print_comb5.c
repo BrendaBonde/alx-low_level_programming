@@ -1,48 +1,45 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Prints numbeers between 00 to 99.
- *
- * Return: Always 0 (success)
+ * main - main block
+ * Return: 0
  */
 int main(void)
 {
-	int i, e, g, h, op1, op2;
+	int c;
+	int d;
+	int e;
+	int f = 0;
 
-	i = e = g = h = 48;
-	while (h < 58)
+	while (f < 10)
 	{
-		g = 48;
-		while (g < 58)
+		e = 0;
+		while (e < 10)
 		{
-			e = 48;
-			while (e < 58)
+			d = 0;
+			whilw (d < 10)
 			{
-				i = 48;
-				while (i < 58)
+				c = 0;
+				while (c < 10)
 				{
-					op1 = (h * 10) + g;
-					op2 = (e * 10) + i;
-					if (op1 < op2)
+					putchar('0' + f);
+					putchar('0' + e);
+					putchar(' ');
+					putchar('0' + c);
+					if (!(f + e == 18 && c + d == 17 && d == 9))
 					{
-						putchar(h);
-						putchar(g);
-						putchar(' ');
-						putchar(e);
-						putchar(i);
-						if (h == 57 && g == 56 && e == 57 && i == 57)
-							break;
 						putchar(',');
 						putchar(' ');
 					}
-					i++;
 				}
-				e++;
+				c++;
 			}
-			g++;
+			d++;
 		}
-		h++;
+		e++;
 	}
-	putchar('\n');
-	return (0);
+	f++;
+}
+putchar('\n');
+return (0);
 }
