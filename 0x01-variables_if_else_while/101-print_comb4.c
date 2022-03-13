@@ -20,7 +20,7 @@ int main(void)
 			e = 48;
 			while (e < 58)
 			{
-				if (p != i && p !=e && e !=i && p < e && p < i && i < e)
+				if (p != i && p != e && e != i && p < e && p < i && i < e)
 				{
 					putchar(p);
 					putchar(i);
