@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - Prints all possible combinations of two-digit numbers,
+ * ranging from 00-99, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int num1, num2;
