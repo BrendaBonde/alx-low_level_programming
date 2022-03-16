@@ -5,9 +5,9 @@
  *
  * @i: digit to be tested
  *
- * Return: Value of the digit
+ * Return: 0 or 1
  */
-int print_last-digit(int n)
+int print_last_digit(int n)
 {
 	int nv;
 
