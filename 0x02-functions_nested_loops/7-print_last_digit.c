@@ -5,21 +5,21 @@
  *
  * @i: digit to be tested
  *
- * Return: value of the digit
+ * Return: Value of the digit
  */
-int print_last_digit(inti)
+int print_last_digit(int i)
 {
 	int m;
 
 	m = i % 10;
 	if (m < 0)
 	{
-		_putchar(-m +48);
+		_putchar(-m + 48);
 		return (-m);
 	}
 	else
 	{
-		_putchar(m +48);
+		_putchar(m + 48);
 		return (m);
 	}
 }
