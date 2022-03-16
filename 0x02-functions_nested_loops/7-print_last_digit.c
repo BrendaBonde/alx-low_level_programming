@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_Last_digit - prints Last digit
+ * print_Last_digit - prints last digit
  *
  * @i: digit to be tested
  *
- * Return: Value of the digit
+ * Return: value of the digit
  */
 int print_Last_digit(int i)
 {
 	int m;
 
 	m = i % 10;
-	if (m < 0)
+	if (m < 10)
 	{
 		_putchar(-m + 48);
 		return (-m);
