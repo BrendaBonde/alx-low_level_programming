@@ -5,7 +5,7 @@
  *
  * @i: digit to be tested
  *
- * Return: 0 or 1
+ * Return: value of the digit
  */
 int print_last_digit(int n)
 {
