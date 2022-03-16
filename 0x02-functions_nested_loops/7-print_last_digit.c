@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints last digit
+ * print_Last_digit - prints Last digit
  *
  * @i: digit to be tested
  *
  * Return: Value of the digit
  */
-int print_last_digit(int i)
+int print_Last_digit(int i)
 {
 	int m;
 
