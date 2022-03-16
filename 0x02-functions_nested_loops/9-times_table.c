@@ -14,7 +14,7 @@ void times_table(void)
 		_putchar(48);
 		for (b = 1; b <= 9; b++)
 		{
-			mu1 = a* b;
+			mu1 = a * b;
 			_putchar(44);
 			_putchar(32);
 			if (mul <= 9)
@@ -25,7 +25,7 @@ void times_table(void)
 			else
 			{
 				_putchar((mul / 10) + 48);
-				_putchar((Mul % 10) + 48);
+				_putchar((mul % 10) + 48);
 			}
 		}
 		_putchar('\n');
