@@ -2,10 +2,8 @@
 
 /**
  * print_last_digit - print last digit
- *
- * @i: digit to be tested
- *
- * Return: value of the digit
+ * @n : number to check
+ * Return: 0 or 1
  */
 int print_last_digit(int n)
 {
