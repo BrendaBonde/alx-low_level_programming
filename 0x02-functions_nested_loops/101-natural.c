@@ -1,7 +1,8 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - prints sum of numbers multiples of 3 and 5
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
  *
  * Return: 0
  */
