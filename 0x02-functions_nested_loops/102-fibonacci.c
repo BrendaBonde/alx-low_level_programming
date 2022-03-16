@@ -7,17 +7,17 @@
  */int main(void)
 {
 	int a;
-	long int num1, num2, fn;
+	long int n1, n2, fn;
 
-	num1 = 1;
-	num2 = 2;
-	printf("%ld, %ld", num1, num2);
+	n1 = 1;
+	n2 = 2;
+	printf("%ld, %ld", n1, n2);
 	for (a = 0; a < 48; a++)
 	{
-		fn + num1 + num2;
+		fn = n1 + n2;
 		printf(", %ld", fn);
-		num1 = num2;
-		num2 = fn;
+		n1 = n2;
+		n2 = fn;
 	}
 	print("\n");
 	return (0);
