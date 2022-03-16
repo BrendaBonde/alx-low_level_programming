@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	inr a, b1, b2;
+	int a, b1, b2;
 	long int n1, n2, fn, fn2, n11, n22;
 
 	n1 = 1;
