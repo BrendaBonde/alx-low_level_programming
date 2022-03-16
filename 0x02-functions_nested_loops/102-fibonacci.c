@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
- int main(void)
+int main(void)
 {
 	int a;
 	long int n1, n2, fn;
