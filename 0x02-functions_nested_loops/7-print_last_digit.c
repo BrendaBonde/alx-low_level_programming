@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints last digit
+ * print_last_digit - print last digit
  *
  * @i: digit to be tested
  *
- * Return: value of the digit
+ * Return: Value of the digit
  */
-int print_last_digit(int i)
+int print_last-digit(int n)
 {
-	int m;
+	int nv;
 
-	m = i % 10;
-	if (m < 10)
-	{
-		_putchar(-m + 48);
-		return (-m);
-	}
+	if (n < 0)
+		nv = -1 * (n % 10);
 	else
-	{
-		_putchar(m + 48);
-		return (m);
-	}
+		nv = n % 10;
+	_putchar(nv + '0');
+	return (nv);
 }
