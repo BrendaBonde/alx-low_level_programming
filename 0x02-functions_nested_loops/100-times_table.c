@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * prints_times_table -prints the n times tables
+ * print_times_table -Prints the n times table
  *
  * @n: number times table ( 0 < n <= 15)
  *
- * Return: None
+ * Return: no return
  */
 void print_times_table(int n)
 {
