@@ -2,7 +2,7 @@
 
 /**
  *  _abs - gives absolute value of an integer
- *  @i: input  number
+ *  @i: Input  number
  *
  *  Return: absolute value
  */
