@@ -1,8 +1,8 @@
 #include  "main.h"
 
 /**
- * print_number - printsnumber put in
- * @n : numbe input
+ * print_number - prints number put in
+ * @n : number input
  * Return: nothing
  */
 
