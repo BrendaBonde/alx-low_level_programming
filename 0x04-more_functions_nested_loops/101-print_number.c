@@ -1,14 +1,14 @@
 #include  "main.h"
 
 /**
- * print_number - prints number put in
- * @n : number input
- * Return: nothing
+ * print_number - prints number put in.
+ * @n: number input
+ * Return: Nothing.
  */
 
 void print_number(int n)
 {
-	insigned int m, d, count;
+	unsigned int m, d, count;
 
 	if (n < 0)
 	{
@@ -18,7 +18,6 @@ void print_number(int n)
 	else
 	{
 		m = n;
-
 	}
 
 	d = m;
@@ -32,6 +31,6 @@ void print_number(int n)
 
 	for (; count >= 1; count /= 10)
 	{
-		_putchar(((m / count) % 10) + 48);
+		_putchar(((m / count) & 10) + 48);
 	}
 }
