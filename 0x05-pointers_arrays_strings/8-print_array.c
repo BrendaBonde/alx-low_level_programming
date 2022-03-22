@@ -4,7 +4,7 @@
 /**
  * print_array - prints n elements of an array of integers
  *
- * @a: pointer to an int
+ * @a: pointer to an integer
  * @n: start
  */
 
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 
 	for (n--; n >= 0; n--, x++)
 	{
-		printf("%d, *(a + x));
+		printf("%d", *(a + x));
 		if (n > 0)
 			printf(", ");
 	}
