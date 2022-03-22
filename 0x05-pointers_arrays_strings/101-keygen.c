@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generates keygen.
+ * main- generates keygen.
  * Return: 0
  */
 
@@ -12,7 +12,7 @@ int main(void)
 	time_t t;
 
 	srand((unsigned int) time(&t));
-	while (c < 2772)
+	while (c < 27772)
 	{
 		r = rand() % 128;
 		if ((c + r) > 2772)
@@ -22,4 +22,4 @@ int main(void)
 
 		printf("%c\n", (2772 - c));
 		return (0);
-}
+	}
