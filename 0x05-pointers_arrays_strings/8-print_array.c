@@ -8,7 +8,7 @@
  * @n: start
  */
 
-void print_array(nt *a, int n)
+void print_array(int *a, int n)
 {
 	int x = 0;
 
