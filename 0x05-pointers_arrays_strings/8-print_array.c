@@ -2,21 +2,21 @@
 #include <stdio.h>
 
 /**
- * print_array - print array to n
- * @a: the array
- * @n: number to count to
- * Return: nothing
+ * print_array - prints n elements of an array of integers
+ *
+ * @a: pointer to an int
+ * @n: start
  */
 
-void print_array(int *a, int *n)
+void print_array(nt *a, int n)
 {
-	int i = 0;
+	int x = 0;
 
-	for (; i < n; i++)
+	for (n--; n >= 0; n--, x++)
 	{
-		printf("%d", *(a + i));
-		if (i != (n - 1))
-			printf(" , ");
+		printf("%d, *(a + x));
+		if (n > 0)
+			printf(", ");
 	}
 	printf("\n");
 }
