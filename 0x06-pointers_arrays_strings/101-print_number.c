@@ -17,15 +17,16 @@ void print_number(int n)
 	else
 	{
 		m = n;
+
 	}
-	
+
 	d = m;
 	c = 1;
 
 	while (d > 9)
 	{
 		d /= 10;
-		c*= 10;
+		c *= 10;
 	}
 
 	for (; c >= 1; c /= 10)
