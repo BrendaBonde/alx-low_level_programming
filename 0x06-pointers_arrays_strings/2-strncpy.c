@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcmp: - compares strings
+ * _strncpy: - compares strings
  * @s1: first string
- * @s2: secong string
+ * @s2: second string
  * Return: 0
  */
 
