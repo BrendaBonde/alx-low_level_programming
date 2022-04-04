@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints product of two numbers
- * @argc: number of args
- * @argv: array of args
- * Return: 0 if okay, 1 if error input
+ * main - multiply two numbers
+ * @argc: arguement count
+ * @argv: array of pointers to arguements strings
+ * Return: result of multiplication or 1
  */
-
-int main(Int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
@@ -20,3 +19,4 @@ int main(Int argc, char *argv[])
 		return (0);
 	}
 }
+
