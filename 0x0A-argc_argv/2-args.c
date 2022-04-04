@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all arguements received
+ * main - prints all arguements
  * @argc: number of args
  * @argv: array of args
  * Return: 0
