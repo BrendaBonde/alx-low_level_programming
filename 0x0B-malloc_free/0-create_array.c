@@ -8,7 +8,7 @@
  * Return: pointer to array or NULL
  */
 
-char *create_array(Unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	chsr *p = (char *)mallic(size * size of(char));
 	unsigned int i = 0;
