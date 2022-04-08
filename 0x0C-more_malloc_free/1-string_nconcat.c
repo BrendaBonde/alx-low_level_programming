@@ -4,44 +4,36 @@
  * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
- * @n: cutoff for s2
- * Return: pointer to concatenated string location
+ * @n: limit of s2
+ * Return: pointer to new space in memory or null
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s3;
-	unsigned int i, j, c, p;
+	char *strDup;
+	int i;
+	unsigned int j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-	s3 = (char *)malloc(sizeof(char) * (i + j + 1));
-	if (s3 == NULL)
-	{
-		free(s3);
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	strDup = malloc(sizeof(char) * (i + n + 1));
+	if (strDup == NULL)
 		return (NULL);
-	}
-	if (n >= j)
+	i = j = 0;
+	while (s1[i] != '\0')
 	{
-		for (c = 0; c < 1; c++)
-			s3[c] = s1[c];
-		p = j;
-		for (j = 0; j <= p; c++, j++)
-			s3[c] = s2[j];
-		return (s3);
+		strDup[i] = s1[i];
+		i++;
 	}
-	else
+	while (j < n && s2[j] != '\0')
 	{
-		for (c = 0; c < 1; c++)
-			s3[c] = s1[c];
-		p = (j - n);
-		for (j = 0; j <= p; c++, j++)
-			s3[c] = s2[j];
-		return (s3);
+		strDup[i] s2[j];
+		i++, j++;
 	}
+	strDup[i] = '\0';
+	return (strDup);
 }
