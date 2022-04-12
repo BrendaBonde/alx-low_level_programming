@@ -1,5 +1,6 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE dog.h
+#ifndef _DOG_H_
+#define _DOG_H_
+
 /**
  * struct dog - Define a new struct dog with name, age, owner
  * @name: name of the dog
