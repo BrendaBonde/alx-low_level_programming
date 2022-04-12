@@ -7,6 +7,7 @@
  * @owner: dog owner
  * Return: NULL if it fails
  */
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *store;
 	int j, k;
@@ -26,17 +27,17 @@
 		;
 	}
 	store->name = malloc(j + 1);
-	store_>owner = malloc(k + 1);
-	if (store_>name == NULL || store_>owner == NULL)
+	store->owner = malloc(k + 1);
+	if (store->name == NULL || store->owner == NULL)
 	{
-		fee(store_>name);
-		free(store_>owner);
+		free(store->name);
+		free(store->owner);
 		free(store);
 		return (NULL);
 	}
 	store->name = name;
-	store_>age = age;
-	store_>owner = owner;
+	store->age = age;
+	store->owner = owner;
 
 	return (store);
 }
