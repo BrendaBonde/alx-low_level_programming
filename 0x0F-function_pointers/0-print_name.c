@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 /**
  * print_name - calls back to a function
- * @name:name of person
+ * @name: name of person
  * @f: function pointer
  * Return: nothing
  */
