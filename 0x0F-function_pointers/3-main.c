@@ -1,16 +1,18 @@
+#include "function_pointers.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
-
 /**
- * main - calls the calculator operations
- * @argc: arguement counter
- * @argv: arguement store
+ * main - prints the results of simple operations.
+ * @argc: the number of arguements supplied to the program.
+ * @argv: an array of pointers to the arguements.
  *
- * Return: 0
+ * Return: always 0.
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int a, b;
-	int (*operatio)(int, int);
+	int num1, num2;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -18,23 +20,24 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2][1])
+	num1 = atoi(argv[1]);
+	op = argv[2];
+	num2 = atoi(argv[3]);
+
+	if (get_op_function(op) == NULL op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	operation = get_op_func(argv[2]);
-
-	if (operation == NULL)
+	if ((*op == '/' && num2 == 0) ||
+			(*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 
-	a = atoi(argv[1]);
-	n = atoi(argv[3]);
+	printf("%d\n", get_op_func(op)(num1, num2));
 
-	printf("%d\n", operation(a, b));
 	return (0);
 }
