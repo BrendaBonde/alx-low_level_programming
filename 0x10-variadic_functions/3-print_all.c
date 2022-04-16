@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	va_list arglist;
 	unsigned int i = 0, j, k = 0;
 	char *str;
-	const char args[] = "cifs";
+	const char args[] = "cfis";
 
 	va_start(arglist, format);
 	while (format && format[i])
@@ -27,23 +27,25 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-		case'c':
-			printf("%c", va_arg(arglist, int)), k = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(arglist, int)), k = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(arglist, double)), k = 1;
-			break;
-		case 's':
-			str = va_arg(arglist, char *), k = 1;
-			if (!str)
-			{
-				printf("%s", str);
+			case 'c':
+				printf("%c", va_arg(arglist, int)), k = 1;
 				break;
-			} i++;
-		}
-		printf("\n"), va_end(arglist);
+			case 'i':
+				printf("%d", va_arg(arglist, int)), k = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(arglist, double)), k = 1;
+				break;
+			case 's':
+				str = va_arg(arglist, char *), k = 1;
+				if (str)
+				{
+					printf("(nil)");
+					break;
+				}
+				print("%s", str);
+				break;
+		} i++;
 	}
+	print("\n"), va_end(arglist);
 }
