@@ -2,8 +2,8 @@
 /**
  * print_all - prints everything
  * @format: pointer to a character that
- * will determine wat is to be printed
- * based on cfis
+ * will determine what is to be printed
+ * based on cfis.
  * Return: nothing
  */
 void print_all(const char * const format, ...)
@@ -27,16 +27,16 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-			case'c':
+		case'c':
 			printf("%c", va_arg(arglist, int)), k = 1;
 			break;
-			case 'i':
+		case 'i':
 			printf("%d", va_arg(arglist, int)), k = 1;
 			break;
-			case 'f':
+		case 'f':
 			printf("%f", va_arg(arglist, double)), k = 1;
 			break;
-			case 's':
+		case 's':
 			str = va_arg(arglist, char *), k = 1;
 			if (!str)
 			{
@@ -46,3 +46,4 @@ void print_all(const char * const format, ...)
 		}
 		printf("\n"), va_end(arglist);
 	}
+}
