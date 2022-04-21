@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_List - prints elements of a list
+ * print_list - prints elements of a list
  * @h: pointer to the list
  * Return: size of the list
  */
