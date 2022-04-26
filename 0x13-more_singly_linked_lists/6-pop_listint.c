@@ -1,24 +1,18 @@
 #include "lists.h"
-/*
- * pop_listint - pops off the head of the list and returns its contents
- * @head: head of the list
- * Return: contents of head
+/**
+ * pop_listint - prints value in head and deletes it
+ * @head: pointer to pointer to head
+ * Return: the value in head before it's deleted
  */
 int pop_listint(listint_t **head)
 {
-	int i;
-	listint_t *current, *tmp;
+	int n;
+	listint_t *node = *head;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
-	tmp = current = *head;
-	if (*head)
-	{
-		i = current->n;
-		*head = current->next;
-		free(tmp);
-	}
-	else
-		i = 0;
-	return (i);
+	n = node->n;
+	*head = node->next;
+	free(node);
+	return (n);
 }
