@@ -4,7 +4,7 @@
  * @head: pointer to pointer to beginning of list
  * @idx: the index
  * @n: the data
- * Return: address of newnod or NULL if it failed
+ * Return: address of newnode or NULL if it failed
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -17,7 +17,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	newNode = (listint_t *)malloc(sizeof(listint_t));
 	newNode->n = n;
 	temp = *head;
-	for (; i < idx - 1; i++)
+	for (i = 2; i < idx - 1; i++)
 	{
 		if (temp->next != NULL)
 		{
@@ -26,5 +26,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	newNode->next = temp->next;
 	temp->next = newNode;
+	free(temp);
 	return (newNode);
 }
