@@ -10,7 +10,7 @@
  *
  * Return: length of the string
  */
-size_t strlen(char *str)
+size_t _strlen(char *str)
 {
 	size_t i;
 
