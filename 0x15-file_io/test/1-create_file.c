@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <stdio.h>
 #include <unistd.h>
-#include <stdlib.h>
 
 /**
  * _strlen - finds the length of a string
  * @str: pointer to the string
  *
- * Return: length of the strinf
+ * Return: length of the string
  */
 size_t _strlen(char *str)
 {
