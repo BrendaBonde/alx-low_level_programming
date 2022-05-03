@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <stdlibh>
 #include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <stdio.h>
 #include <unistd.h>
-#include <stdlib.h>
 
 /**
  * _strlen - finds the length of a string
